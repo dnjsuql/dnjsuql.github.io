@@ -1,0 +1,86 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap"); */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; letter-spacing: -1px; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+html { box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+img { width: 100%; max-width: 100%; vertical-align: top; }
+
+ol, ul, li { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+
+table { width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed; }
+
+textarea { resize: none; }
+
+input { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; }
+
+button { margin: 0; padding: 0; border: 0; background: 0; -webkit-appearance: none; outline: none; cursor: pointer; }
+
+a, a * { cursor: pointer; }
+
+pre { white-space: pre-wrap; }
+
+hr { margin: 0; padding: 0; border: 0; outline: 0; }
+
+input[type="checkbox"], input[type="radio"] { opacity: 1; width: 14px; height: 14px; margin: 0; cursor: pointer; }
+
+sup { vertical-align: super; font-size: 0.5em; }
+
+a, a:hover, a:focus { /* color: inherit; */ text-decoration: none; }
+
+input::-webkit-search-cancel-button { display: none; }
+
+input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset; }
+
+html { font-size: 16px; }
+
+body, button, input, textarea { font-family: 'notosans','BlenderPro','Poppins',sans-serif; }
+
+body { line-height: 1.2; }
+
+body.hidden { overflow: hidden; height: 100%; }
+
+table caption { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); }
+
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+select::-ms-expand { display: none; }
+
+.hide { overflow: hidden; display: inline-block; border: 0; margin: -1px; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); -webkit-clip-path: inset(50%); clip-path: inset(50%); }
+
+figure { width: 100%; }
+
+.blind { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+br.w1280 { display: none; }
+
+br.w1024 { display: none; }
+
+br.full { display: block; }
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) { br.w1280 { display: block !important; }
+  br.full { display: none; } }
+
+@media screen and (max-width: 1024px) { br.w1280 { display: none !important; }
+  br.w1024 { display: block; } }
+
+@font-face { font-family: 'notosans'; font-style: normal; font-weight: 300; src: url(../fonts/notosans/NotoSansKR-Light.woff2) format("woff2"), url(../fonts/notosans/NotoSansKR-Light.woff) format("woff"), url(../fonts/notosans/NotoSansKR-Light.otf) format("opentype"); }
+
+@font-face { font-family: 'notosans'; font-style: normal; font-weight: 400; src: url(../fonts/notosans/NotoSansKR-Regular.woff2) format("woff2"), url(../fonts/notosans/NotoSansKR-Regular.woff) format("woff"), url(../fonts/notosans/NotoSansKR-Regular.otf) format("opentype"); }
+
+@font-face { font-family: 'notosans'; font-style: normal; font-weight: 500; src: url(../fonts/notosans/NotoSansKR-Medium.woff2) format("woff2"), url(../fonts/notosans/NotoSansKR-Medium.woff) format("woff"), url(../fonts/notosans/NotoSansKR-Medium.otf) format("opentype"); }
+
+@font-face { font-family: 'notosans'; font-style: normal; font-weight: 700; src: url(../fonts/notosans/NotoSansKR-Bold.woff2) format("woff2"), url(../fonts/notosans/NotoSansKR-Bold.woff) format("woff"), url(../fonts/notosans/NotoSansKR-Bold.otf) format("opentype"); }
+
+@font-face { font-family: 'BlenderPro'; font-style: normal; font-weight: 100; src: url(../fonts/blenderPro/BlenderPro-Thin.eot); src: url(../fonts/blenderPro/BlenderPro-Thin.eot?#iefix) format("embedded-opentype"), url(../fonts/blenderPro/BlenderPro-Thin.ttf) format("truetype"), url(../fonts/blenderPro/BlenderPro-Thin.woff) format("woff"), url(../fonts/blenderPro/BlenderPro-Thin.woff2) format("woff2"); }
+
+@font-face { font-family: 'BlenderPro'; font-style: normal; font-weight: 400; src: url(../fonts/blenderPro/BlenderPro-Medium.eot); src: url(../fonts/blenderPro/BlenderPro-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/blenderPro/BlenderPro-Medium.ttf) format("truetype"), url(../fonts/blenderPro/BlenderPro-Medium.woff) format("woff"), url(../fonts/blenderPro/BlenderPro-Medium.woff2) format("woff2"); }
+
+@font-face { font-family: 'BlenderPro'; font-style: normal; font-weight: 700; src: url(../fonts/blenderPro/BlenderPro-Bold.eot); src: url(../fonts/blenderPro/BlenderPro-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/blenderPro/BlenderPro-Bold.woff) format("woff"), url(../fonts/blenderPro/BlenderPro-Bold.woff2) format("woff2"); }
