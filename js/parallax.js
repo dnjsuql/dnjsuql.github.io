@@ -20,26 +20,9 @@ var CommonVerticalParallax = (function() {
       duration: $height
     })
     .setPin(parallax + '__textarea', { pushFollowers : false })
-    // .on('progress', function(e) {
-    //   if(e.progress > 0.7) {
-    //     $(parallax + '__inner').css({'visibility' : 'hidden'})
-    //   } else {
-    //     $(parallax + '__inner').css({'visibility' : 'visible'})
-    //   }
-    // })
     // .addIndicators({ name: 'setpin'})
     .addTo(controller);
 
-    // function tabUpdate() {
-    //   var tabs = $('[data-element="tab"]').data('plugin_tab');
-    //   if(typeof tabs === 'undefined') {
-    //     return;
-    //   }
-    //   $(tabs.element).on('afterChange', function () {
-    //     var $height = document.querySelector('.parallax01__bottom').clientHeight;
-    //     setPinTop.duration($height);
-    //   });
-    // }
     var triggerHookTime;
     if($(window).width() < 500){
       triggerHookTime = 0.7
@@ -72,14 +55,7 @@ var CommonHalfVerticalParallax = (function() {
     if ($('[data-role="parallax02"]').length < 1) {
       return;
     }
-    // $(window).on({
-    //   load: function() {
-    //     updateParallax();
-    //   },
-    //   resize: function() {
-    //     updateParallax();
-    //   }
-    // });
+
     action();
   }
 
@@ -384,11 +360,11 @@ var MainParallax = (function () {
     if ($('[data-role="mainparallax"]').length < 1) {
       return;
     }
-    if($('[data-role="mainparallax"]').length >= 1 && $('[data-role="mainparallax"]').hasClass('c31')){
-      actionC31();
-    } else {
-      action();
-    }
+    action();
+    setTimeout(function(){
+      $('.parallax02__container').height($('.parallax02__rightinner').outerHeight());
+      $('.parallax03').height($('.parallax03__leftinner').outerHeight());
+    },1000)
   }
   
   var action = function () {
@@ -503,24 +479,6 @@ var MainParallax = (function () {
       $('.company-info__bg--type03').css({'transform' : 'scale(' + gage  +')'})
     })
     // .addIndicators()
-    .addTo(controller)
-  }
-  var actionC31 = function(){
-    var controller = new ScrollMagic.Controller();
-    animation01 = new ScrollMagic.Scene({
-      triggerElement: '.mainparallax__section',
-      triggerHook: 0.3,
-      offset: 0,
-      reverse: false
-    })
-    .on("start", function(){
-      $.Velocity.RunSequence([
-        { e: $('.mainparallax__section .fade-text'), p: { opacity: 1, bottom: 0}, o: {duration: 500}},
-        { e: $('.mainparallax__section .fade-bar'), p: { height: '120px'}, o: {duration: 700}},
-        { e: $('.mainparallax__section .fade-text2'), p: { opacity: 1, bottom: 0}, o: {duration: 1200}}
-      ]);
-    })
-    // .addIndicators({ name: 'fadetext01' })
     .addTo(controller)
   }
   return {

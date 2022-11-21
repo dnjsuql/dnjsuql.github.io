@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  HeaderCtrl.init(); // header
   SwiperCtrl.init(); // swiper
   TopbuttonCtrl.init();
 
