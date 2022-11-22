@@ -119,9 +119,9 @@ section[class^=z00] { position: relative; }
 
 .video__item.swiper-slide { cursor: auto !important; }
 
-.video__contents { overflow: hidden; width: 100%; height: 0; padding-top: 77.77777%; }
+.video__contents { overflow: hidden; width: 100%; height: 100vh; padding-top: 77.77777%; }
 
-.video__contents video { position: absolute; top: 0; left: 0; -o-object-fit: cover; object-fit: cover; width: 100%; height: auto; }
+.video__contents video { position: absolute; top: 0; left: 0; -o-object-fit: cover; object-fit: cover; width: 100%; height: 100vh; }
 
 .video__contents.chrome video { height: 100%; }
 

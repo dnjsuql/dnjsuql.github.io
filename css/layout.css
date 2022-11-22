@@ -170,7 +170,7 @@ html { scroll-behavior: smooth; }
 
 .footer .footer__link { min-width: 655px; }
 
-.footer .footer__link ol { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap; height: 108px; }
+.footer .footer__link ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column wrap; -ms-flex-flow: column wrap; flex-flow: column wrap; height: 108px; }
 
 .footer .footer__link li { float: none; margin: 0 !important; width: calc(100% / 3); height: 36px; }
 
