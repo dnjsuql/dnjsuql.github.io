@@ -413,10 +413,10 @@ var MainParallax = (function () {
     })
     .setPin(".mainparallax02__section", { pushFollowers : false })
     .on('progress', function(e) {
-      if(e.progress > 0.7) {
-    //    $('.mainparallax02__section .text-line').css({'visibility' : 'hidden'})
+      if(e.progress > 0.8) {
+       $('.mainparallax02__section .text-line').css({'visibility' : 'hidden'})
       } else {
-    //    $('.mainparallax02__section .text-line').css({'visibility' : 'visible'})
+       $('.mainparallax02__section .text-line').css({'visibility' : 'visible'})
       }
     })
     // .addIndicators()

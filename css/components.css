@@ -1,6 +1,6 @@
 .text-line { padding: 0; text-align: center; color: #000; }
 
-.text-line__title { margin-bottom: 258px; font-family: "BlenderPro" !important; font-size: 48px; font-weight: 700; line-height: 0.83; letter-spacing: 9.6px; }
+.text-line__title { margin-bottom: 230px; font-family: "BlenderPro" !important; font-size: 48px; font-weight: 700; line-height: 0.83; letter-spacing: 9.6px; }
 
 .text-line__sub-title { margin-bottom: calc(54px + 186px); font-size: 18px; font-weight: 700; line-height: 2.22; }
 
